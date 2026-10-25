@@ -7,7 +7,7 @@ import svgr from '@svgr/rollup';
 export default defineConfig({
   resolve: {
     alias: {
-      src: resolve(__dirname, 'src'),
+      src: resolve(import.meta.dirname, 'src'),
     },
   },
   esbuild: {
